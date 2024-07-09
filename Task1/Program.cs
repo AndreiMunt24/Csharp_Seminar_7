@@ -2,7 +2,7 @@
 // которая выведет все натуральные числа в промежутке от M до N.
 //  Использовать рекурсию, не использовать циклы.
 
-    static void Main()
+void Main()
     {
         Console.Write("Введите значение M: ");
         int M = int.Parse(Console.ReadLine());
@@ -13,8 +13,7 @@
         Console.WriteLine($"Числа в промежутке от {M} до {N}:");
         PrintNumbers(M, N);
     }
-
-    static void PrintNumbers(int M, int N)
+ void PrintNumbers(int M, int N)
     {
         if (M > N)
         {

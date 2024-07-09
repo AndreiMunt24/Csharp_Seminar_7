@@ -2,7 +2,7 @@
 // функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.
 
 
-    static void Main()
+  void Main()
     {
         Console.Write("Введите значение m: ");
         int m = int.Parse(Console.ReadLine());
@@ -14,7 +14,7 @@
         Console.WriteLine($"Ackermann({m}, {n}) = {result}");
     }
 
-    static int Ackermann(int m, int n)
+   int Ackermann(int m, int n)
     {
         if (m == 0)
         {
