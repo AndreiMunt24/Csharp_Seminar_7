@@ -2,7 +2,7 @@
 // Выведете его элементы, начиная с конца. Использовать рекурсию, 
 // не использовать циклы.
 
-    static void Main()
+ void Main()
     {
         Console.WriteLine("Введите элементы массива, разделенные пробелами:");
         int[] array = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
@@ -11,7 +11,7 @@
         PrintArrayReverse(array, array.Length - 1);
     }
 
-    static void PrintArrayReverse(int[] array, int index)
+void PrintArrayReverse(int[] array, int index)
     {
         if (index < 0)
         {
